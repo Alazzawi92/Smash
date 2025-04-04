@@ -1,0 +1,850 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  height: 100vh;
+}
+nav {
+  box-shadow: #030303 0px 0px 10px;
+  background-color: white;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#langue {
+  width: 33%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+}
+#selectlaguage {
+  padding: 5px;
+  width: 100px;
+  height: 40px;
+  background-image: url("path/to/dropdown-arrow.png");
+  background-repeat: no-repeat;
+}
+
+#logo {
+  width: 34%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#divSMASH {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+#SMASH {
+  font-family: Linden Hill;
+  font-size: 130px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+#GOURMET::after {
+  content: "________"; /* Tiret long */
+  font-size: 24px;
+  margin: 0px 10px;
+}
+#GOURMET::before {
+  content: "________"; /* Tiret long */
+  font-size: 24px;
+  margin: 0 10px;
+}
+#IF {
+  width: 33%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#facebook {
+  width: 45px;
+  height: 45px;
+}
+#instagram {
+  width: 50px;
+  height: 50px;
+}
+/* From Uiverse.io by Cevorob */
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+#pages {
+  padding: 0 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#pages a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+#pages a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+#pages a:hover {
+  color: #000;
+}
+#pages a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#pages a:hover p {
+  animation: wobble 0.5s ease;
+}
+@keyframes wobble {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(5deg);
+  }
+}
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+#container {
+  /* background-color: tomato; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+#gauche {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#gauche h1 {
+  font-family: Linden Hill;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 20px;
+  margin-bottom: 0;
+}
+#gauche p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+  font-size: 20px;
+  margin: 20px;
+}
+.btn {
+  width: 191px;
+  height: 60px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease, visibility 0s; /* Animation fluide */
+  background: rgba(0, 0, 0, 0); /* Fond transparent */
+  padding: 10px;
+  border: 1px solid #000000; /* Bordure noire */
+  border-radius: 3px; /* Coins légèrement arrondis */
+  margin: 10px;
+}
+.btn:hover {
+  border-radius: 20px;
+}
+#droit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 50px;
+}
+#presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  margin: 100px 0;
+}
+#titleText {
+  font-family: Linden Hill;
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
+  margin:0 20px;
+  margin-top: 150px;
+  width: 80%;
+}
+#text {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+#part1,
+#part2 {
+  margin-bottom: 40px;
+}
+#part1 p,
+#part2 p {
+  font-size: 16px;
+  text-align: justify;
+  font-family: cursive;
+}
+#part2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#imgText {
+  width: 50%;
+}
+#text2 {
+  width: 50%;
+  font-size: 16px;
+  text-align: justify;
+}
+@media (max-width: 768px) {
+  #part2 {
+    flex-direction: column;
+  }
+
+  #imgText,
+  #text2 {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #text {
+    font-size: 14px;
+  }
+}
+#leMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#titleLeMenu {
+  font-family: "Linden Hill", serif;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+#lesCartes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.carte {
+  position: relative;
+  width: 250px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+/* Effet de zoom au survol */
+.carte:hover {
+  transform: scale(1.05);
+}
+.imgCarte {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+/* Zoom sur l'image au survol */
+.carte:hover .imgCarte {
+  transform: scale(1.1);
+}
+.btnCarte {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.btnCarte:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.5) translateX(-40%, -40%);
+  transition: transform 0.5s ease-in-out;
+}
+#optionDeCommende {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 50vh;
+}
+#infoCarte {
+  width: 60%;
+  height:90%;
+  position: absolute;
+  margin-top: 300px;
+  padding: 20px;
+  padding-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#titleODC {
+  font-family: "Linden Hill", serif;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+#btnOption {
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.icons {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+#btnLivraison,
+#btnCliquez {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  flex-direction: column;
+  transition: transform 0.5s;
+  margin: 0 20px;
+  margin-bottom: 40px;
+}
+#btnLivraison:hover,
+#btnCliquez:hover {
+  transform: scale(1.4);
+}
+#QUESTION {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+}
+#QUESTION h1 {
+  font-family: "Linden Hill", serif;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 50px;
+  background-color: rgb(224, 217, 217);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: #000000 0px 0px 10px;
+}
+.input {
+  width: 60%;
+  height: 25px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+textarea {
+  width: 60%;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+  border-top: #000000 1px solid;
+  box-shadow: #000000 0px 0px 10px;
+  padding: 20px;
+}
+#footer1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#footer p {
+  font-size: 15px;
+  margin: 10px;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+}
+#footer a:hover {
+  border-bottom: white 3px solid;
+}
+#langue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 1px solid #000000;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+#select:focus {
+  outline: none;
+}
+#select {
+  width: 80px;
+  height: 40px;
+  background-image: url("path/to/dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 120px;
+}
+#fixed-button {
+  width: 65px;
+  height: 65px;
+  position: fixed;
+  top: 50%; /* Ajustez cette valeur pour l'écart vertical */
+  right: 5px;
+  transform: translateY(0); /* Supprimez l'ajustement vertical */
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+#fixed-button:hover,
+#top:hover {
+  transform: scale(1.2);
+}
+#rating {
+  position: fixed; 
+  /* Fixe l'élément à l'écran */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centre parfaitement */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: white; 
+  /* Ajoute un fond si nécessaire */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.rating {
+  display: inline-block;
+  opacity: 1;
+}
+.rating input {
+  display: none;
+  opacity: 1;
+}
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+  transition: color 0.3s;
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #ffc300;
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+  animation: bounce 0.5s ease-in-out alternate;
+}
+@keyframes bounce {
+  to {
+    transform: scale(1.3);
+  }
+}
+#top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 90%; /* Ajustez cette valeur pour l'écart vertical */
+  right: 5px;
+  transform: translateY(0); /* Supprimez l'ajustement vertical */
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  #avis {
+    display: none;
+  }
+  #top {
+    display: none;
+  }
+  nav {
+    height: 100%;
+  }
+  #SMASH {
+    font-size: 40px;
+  }
+  #GOURMET::after {
+    content: "____"; /* Tiret long */
+    font-size: 24px;
+    margin: 0px 10px;
+  }
+  #GOURMET::before {
+    content: "____"; /* Tiret long */
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  #Dburger {
+    height: 180px;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burger {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+
+  #IF {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  #pages {
+    top: 180px;
+    left: -100%;
+    border-radius: 20px;
+    position: fixed;
+    gap: 0;
+    background-color: rgba(0, 0, 0, 0.614);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+  }
+  #pages a {
+    font-size: 30px;
+    margin: 20px;
+    background-color: #777676;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+  }
+ #pages.active {
+    left: 0;
+  
+  }
+  #container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #gauche {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  #gauche h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 0;
+  }
+  #gauche p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+    font-size: 20px;
+    margin: 20px;
+  }
+  .btn {
+    width: 191px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease, visibility 0s; /* Animation fluide */
+    background: rgba(0, 0, 0, 0); /* Fond transparent */
+    padding: 10px;
+    border: 1px solid #000000; /* Bordure noire */
+    border-radius: 3px; /* Coins légèrement arrondis */
+    margin: 10px;
+  }
+  #droit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+  }
+  #titleText {
+    font-family: Linden Hill;
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    width: 80%;
+  }
+  #titleText {
+    font-size: 25px;
+  }
+  #text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  #part2 p {
+    display: none;
+  }
+  #part1 {
+    margin-bottom: 40px;
+  }
+  #part1 p,
+  #part2 p {
+    font-size: 16px;
+    text-align: justify;
+    font-family: cursive;
+  }
+  #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  #imgText {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  #infoCarte{
+    height: 50%;
+  }
+  iframe{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .lesH {
+    display: none;
+  }
+  #titleLeMenu,
+  #QUESTION h1,
+  #titleODC,
+  #titleLeMenu {
+    font-family: "Linden Hill", serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0;
+
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  #optionDeCommende {
+    height: 100%;
+  }
+  #btnOption {
+    margin: 20px 0;
+  }
+  #QUESTION {
+    height: 100%;
+    margin-bottom: 200px;
+  }
+  form {
+    width: 80%;
+  }
+  #footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+

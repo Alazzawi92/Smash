@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/home.css" />
+    <title>SMASH</title>
+  </head>
+  <body>
+    <section id="topPage">
+    <nav>
+      <div id="langue">
+        <select  name="language" id="selectlaguage">
+             <option value="fr">FR</option>
+             <option value="en">EN</option>
+        </select>
+     </div>
+      <div id="logo">
+        <div id="divSMASH"><h1 id="SMASH">SMASH</h1></div>
+        <div id="divGOURMET"><h1 id="GOURMET">GOURMET</h1></div>
+      </div>
+      <div id="IF">
+        <a href="https://www.instagram.com/le_smash_gourmet/"
+          ><img
+            id="instagram"
+            src="/icons/instagram.png"
+            alt="instagram"
+          />
+        </a>
+        <a href="">
+          <img id="facebook" src="/icons/fb.png" alt="facebook" />
+        </a>
+      </div>
+     <div id="Dburger"> <label class="burger" for="burger">
+      <input type="checkbox" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label></div>
+      <div id="pages">
+        <a href="#presentation"><p><%= __('Qui sommes-nous ?') %></p></a>
+        <a href="#menu"><p><%= __('Menu') %></p></a>
+        <a href="#order"><p><%= __('Commandez') %></p></a>
+        <a href="#"><p><%= __('Contact') %></p></a>
+      </div>
+    </nav>
+  </section>
+    <main>
+      <a href="#VotreAvis"><div id="avis"><img id="fixed-button" src="/icons/avis.png" alt="icons"></div></a>
+      <a href="#topPage"><img id="top" src="/icons/flèche.png" alt=""></a>
+      <div id="container">
+        <div id="gauche">
+          <h1>SMASH</h1>
+          <p>GOURMET</p>
+          <a href="/menu"><button class="btn">Menu</button></a>
+        </div>
+        <div id="droit">
+          <div>
+            <img src="/images/Cover_edited.avif" alt="img" />
+          </div>
+        </div>
+        <section id="presentation">
+        <div id="titleText"><h1>SMASH BURGERS</h1></div>
+        <div id="text">
+          <div id="part1">
+            <p>
+              Les restaurants GOURMET proposent une recette unique, pensée pour
+              les puristes et élaborée avec une approche minimaliste. Chaque
+              détail est soigneusement étudié pour sublimer l’essentiel :
+              l’équilibre parfait entre des ingrédients de qualité et des
+              saveurs authentiques. Les burgers sont préparés avec un pain
+              brioché français, des viandes d’exception (Charolaise et
+              Limousine), du fromage premium et une sauce maison secrète,
+              véritable signature de la marque. Chaque ingrédient est
+              sélectionné avec soin pour garantir une expérience gustative
+              inoubliable. Déclinés en plusieurs tailles, du S au XXL, les smash
+              burgers s’adaptent à toutes les faims, avec un à cinq steaks au
+              choix. Pour une touche personnalisée, ajoutez des pickles de
+              jalapeños pour plus de piquant ou des oignons caramélisés pour un
+              équilibre parfait entre douceur et intensité.
+            </p>
+          </div>
+          <div id="part2">
+            <img id="imgText" src="/images/Sans titre-3.avif" alt="" />
+            <p>
+              Parce qu’un burger ne se déguste jamais seul, GOURMET propose des
+              frites ultra croustillantes, même en livraison ! Et pour les
+              amateurs de poulet frit, les Panko Chicken Bites, enrobés d’une
+              chapelure japonaise, offrent une texture incroyablement
+              croustillante. Fidèle au concept du « less is more », GOURMET mise
+              sur la simplicité et l’excellence pour une expérience culinaire
+              mémorable dès la première bouchée. Que ce soit sur place ou en
+              livraison, GOURMET vous promet une explosion de saveurs à chaque
+              instant.
+            </p>
+          </div>
+        </div>
+      </section>
+        <section id="menu">
+        <div id="leMenu">
+          <p id="titleLeMenu">Le menu GOURMET</p>
+          <div id="lesCartes">
+            <div id="carte1" class="carte">
+              <img class="imgCarte" src="/images/smash.avif" alt="" />
+              <a href="/menu"><button class="btnCarte">Menu</button></a>
+            </div>
+            <div id="carte2" class="carte">
+              <img
+                class="imgCarte"
+                src="/images/Sans-titre-14-removebg-preview.png"
+                alt=""
+              />
+              <button class="btnCarte">Frite</button>
+            </div>
+            <div id="carte3" class="carte">
+              <img
+                class="imgCarte"
+                src="/images/cookie2-removebg-preview (1).png"
+                alt=""
+              />
+              <button class="btnCarte">Sweet</button>
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="order">
+        <div id="optionDeCommende">
+          <h1 id="titleODC">Gâtez-vous</h1>
+          <div id="btnOption">
+            <button class="btn" id="btnLivraison">
+              <img
+                class="icons"
+                src="/icons/trialbike_sport_cycling_4547.png"
+                alt="icons"
+              />
+              <p>Livraison</p>
+            </button>
+            <button class="btn" id="btnCliquez">
+              <img
+                class="icons"
+                src="/icons/cursor_click_regular_icon_203700.png"
+                alt="icons"
+              />
+              <p>Cliquez</p>
+            </button>
+          </div>
+          <!-- Carte cachée -->
+<div id="infoCarte" style="display: none;">
+  <h2>Adresse</h2>
+  <p>123 Rue Gourmet, Paris, France</p>
+  <h2>Numéro de téléphone</h2>
+  <p>+33 1 23 45 67 89</p>
+  <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9999999999995!2d2.294481315674!3d48.858844979287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8778e6b0f%3A0x2d8e6b0f0e6b0f0e!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1610000000000!5m2!1sen!2sfr"
+  width="100%"
+  height="300"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+></iframe>
+  <h2 class="lesH" style="margin: 20px;">Horaires d'ouverture</h2>
+  <p class="lesH" style="margin-top: 10px;">Lundi - Vendredi</p>
+  <p class="lesH" style="margin-top: 10px;">11h30 - 14h00</p>
+  <p class="lesH" style="margin-top: 10px;">18h00 - 22h</p>
+  <p class="lesH" style="margin-top: 10px;">Samedi - Dimanche</p>
+  <p class="lesH" style="margin-top: 10px;">18h - 22h</p>
+</div>
+        </div>
+        </section>
+        <section id="VotreAvis">
+        <div id="QUESTION">
+          <h1>Donnez-nous votre avis</h1>
+          <form action="">
+            <input class="input" type="text" placeholder="Nom & Prénom " />
+            <input class="input" type="text" placeholder="Email" />
+            <div class="rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5"></label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4"></label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3"></label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2"></label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1"></label>
+              </div>
+            <textarea
+              class="text"
+              name="text"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Votre message"
+            ></textarea>
+            <button class="btn">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div id="footer1">
+        <h1>SMASH</h1>
+        <p>GOURMET</p>
+      </div>
+     
+      <div id="footer3">
+        <p>Politique de confidentialité</p>
+        <p>Conditions générales</p>
+      </div>
+      <div id="footer2">
+        <p>© 2025 SMASH GOURMET</p>
+      </div>
+    </footer>
+    </body>
+  <script src="/js/home.js"></script>
+</html>
+
