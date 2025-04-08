@@ -12,21 +12,37 @@ document.addEventListener("DOMContentLoaded", function () {
   /**
    * Met à jour l'affichage du drapeau dans le select
    */
+  // function updateFlag() {
+  //   const selectedOption = select.options[select.selectedIndex];
+  //   const flagUrl = flagUrls[selectedOption.value];
+  //   select.style.backgroundImage = `url('${flagUrl}')`;
+  //   select.style.backgroundSize =
+  //   selectedOption.value === "fr" ? "35px" : "25px";
+  //   select.style.backgroundPosition = "right 15px center";
+  // }
   function updateFlag() {
     const selectedOption = select.options[select.selectedIndex];
+    console.log("Selected language:", selectedOption.value); // Vérifie la langue sélectionnée
     const flagUrl = flagUrls[selectedOption.value];
-    select.style.backgroundImage = `url('${flagUrl}')`;
-    select.style.backgroundSize =
+    console.log("Flag URL:", flagUrl); // Vérifie l'URL du drapeau
+    if (flagUrl) {
+      select.style.backgroundImage = `url('${flagUrl}')`;
+      select.style.backgroundSize = "35px";
       selectedOption.value === "fr" ? "35px" : "25px";
-    select.style.backgroundPosition = "right 15px center";
+      select.style.backgroundPosition = "right 15px center";
+    } else {
+      console.error("Flag URL not found for selected language:", selectedOption.value);
+    }
   }
 
   // Initialisation du drapeau
   updateFlag();
-  // Écouteur de changement de langue
   select.addEventListener("change", function () {
     const selectedLang = this.value;
-    window.location.href = `/change-lang/${selectedLang}`;
+    updateFlag(); // Met à jour le drapeau immédiatement
+    setTimeout(() => {
+      window.location.href = `/change-lang/${selectedLang}`;
+    }, 100); // Ajoute un léger délai pour permettre l'affichage
   });
 
   /**

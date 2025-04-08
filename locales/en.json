@@ -1,18 +1,21 @@
 {
-    "SMASH": "SMASH",
-    "GOURMET": "GOURMET",
-    "Qui sommes-nous ?": "Who are we?",
-    "Menu": "Menu",
-    "Commandez": "Order",
-    "Contact": "Contact",
-    "Votre avis": "Your feedback",
-    "Donnez-nous votre avis": "Give us your feedback",
-    "Nom & Prénom": "Full Name",
-    "Email": "Email",
-    "Votre message": "Your message",
-    "Envoyer": "Send",
-    "Politique de confidentialité": "Privacy Policy",
-    "Conditions générales": "Terms and Conditions",
-    "© 2021 SMASH GOURMET": "© 2021 SMASH GOURMET"
-  }
-  
+  "Qui sommes-nous ?": "Who are we?",
+  "Menu": "Menu",
+  "Commandez": "Order",
+  "Contact": "Contact",
+  "SMASH BURGERS": "SMASH BURGERS",
+  "Les restaurants GOURMET proposent une recette unique, pensée pour les puristes et élaborée avec une approche minimaliste. Chaque détail est soigneusement étudié pour sublimer l’essentiel : l’équilibre parfait entre des ingrédients de qualité et des saveurs authentiques. Les burgers sont préparés avec un pain brioché français, des viandes d’exception (Charolaise et Limousine), du fromage premium et une sauce maison secrète, véritable signature de la marque. Chaque ingrédient est sélectionné avec soin pour garantir une expérience gustative inoubliable. Déclinés en plusieurs tailles, du S au XXL, les smash burgers s’adaptent à toutes les faims, avec un à cinq steaks au choix. Pour une touche personnalisée, ajoutez des pickles de jalapeños pour plus de piquant ou des oignons caramélisés pour un équilibre parfait entre douceur et intensité.": "GOURMET restaurants offer a unique recipe, designed for purists and developed with a minimalist approach. Every detail is carefully considered to enhance the essentials: the perfect balance between quality ingredients and authentic flavors. The burgers are made with French brioche buns, exceptional meats (Charolaise and Limousine), premium cheese, and a secret homemade sauce, the brand's true signature. Each ingredient is carefully selected to ensure an unforgettable taste experience. Available in several sizes, from S to XXL, smash burgers cater to all appetites, with one to five patties to choose from. For a personalized touch, add jalapeño pickles for extra spice or caramelized onions for a perfect balance of sweetness and intensity.",
+  "Parce qu’un burger ne se déguste jamais seul, GOURMET propose des frites ultra croustillantes, même en livraison ! Et pour les amateurs de poulet frit, les Panko Chicken Bites, enrobés d’une chapelure japonaise, offrent une texture incroyablement croustillante. Fidèle au concept du « less is more », GOURMET mise sur la simplicité et l’excellence pour une expérience culinaire mémorable dès la première bouchée. Que ce soit sur place ou en livraison, GOURMET vous promet une explosion de saveurs à chaque instant.": "Because a burger is never enjoyed alone, GOURMET offers ultra-crispy fries, even for delivery! And for fried chicken lovers, the Panko Chicken Bites, coated in Japanese breadcrumbs, provide an incredibly crispy texture. True to the 'less is more' concept, GOURMET focuses on simplicity and excellence for a memorable culinary experience from the very first bite. Whether on-site or for delivery, GOURMET promises an explosion of flavors at every moment.",
+  "Le menu GOURMET": "The GOURMET menu",
+  "Gâtez-vous": "Treat yourself",
+  "Livraison": "Delivery",
+  "Cliquez": "Click",
+  "Donnez-nous votre avis": "Give us your feedback",
+  "Nom & Prénom": "Name & Surname",
+  "Email": "Email",
+  "Votre message": "Your message",
+  "Envoyer": "Send",
+  "Politique de confidentialité": "Privacy Policy",
+  "Conditions générales": "Terms and Conditions",
+  "© 2025 SMASH GOURMET": "© 2025 SMASH GOURMET"
+}
