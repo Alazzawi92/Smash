@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .input,
+  .text,
+  .btn {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+  }
+  
+  .rating input[type='radio'] {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: #ccc;
+  }
+  
+  .rating input[type='radio']:checked ~ label {
+    color: gold;
+  }
+  

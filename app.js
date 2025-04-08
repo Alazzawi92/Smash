@@ -43,6 +43,11 @@ app.set("views", "./views");
 
 // 6️⃣ Middleware pour les fichiers statiques
 app.use(express.static("public"));
+// Middleware pour analyser les données JSON
+app.use(express.json());
+
+// Middleware pour analyser les données URL-encoded (formulaires)
+app.use(express.urlencoded({ extended: true }));
 
 // 7️⃣ Routes
 app.get("/", (req, res) => {
@@ -53,6 +58,25 @@ app.get("/home", (req, res) => {
 });
 app.get("/menu", (req, res) => {
   res.render("menu");
+});
+//########## Avis ##########//
+// Route pour traiter les avis soumis
+app.post('/submit-avis', (req, res) => {
+  const { nom, email, rating, commentaire } = req.body;
+ // Vérifiez si les données sont bien reçues
+ if (!nom || !email || !rating || !commentaire) {
+  return res.status(400).send('Tous les champs sont requis.');
+}
+  // Vous pouvez enregistrer ces données dans une base de données ici si nécessaire.
+  console.log(`Avis reçu : 
+    Nom: ${nom}, 
+    Email: ${email}, 
+    Note: ${rating}, 
+    Commentaire: ${commentaire}`);
+
+  // Rediriger l'utilisateur vers Google pour finaliser l'avis
+  const googleReviewLink = 'https://www.google.com/maps/place/https://g.page/r/CWC43rgYd9kNEAE/review/reviews'; // Remplacez [VOTRE_PLACE_ID] par votre ID Google My Business.
+  res.render('avis-soumis', { googleReviewLink }); // Affiche un message de confirmation avec le lien Google.
 });
 
 

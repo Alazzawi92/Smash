@@ -33,7 +33,6 @@ nav {
   background-image: url("path/to/dropdown-arrow.png");
   background-repeat: no-repeat;
 }
-
 #logo {
   width: 34%;
   height: 180px;
@@ -89,11 +88,9 @@ nav {
   cursor: pointer;
   display: block;
 }
-
 .burger input {
   display: none;
 }
-
 .burger span {
   display: block;
   position: absolute;
@@ -106,35 +103,29 @@ nav {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-
 .burger span:nth-of-type(1) {
   top: 0px;
   transform-origin: left center;
 }
-
 .burger span:nth-of-type(2) {
   top: 50%;
   transform: translateY(-50%);
   transform-origin: left center;
 }
-
 .burger span:nth-of-type(3) {
   top: 100%;
   transform-origin: left center;
   transform: translateY(-100%);
 }
-
 .burger input:checked ~ span:nth-of-type(1) {
   transform: rotate(45deg);
   top: 0px;
   left: 5px;
 }
-
 .burger input:checked ~ span:nth-of-type(2) {
   width: 0%;
   opacity: 0;
 }
-
 .burger input:checked ~ span:nth-of-type(3) {
   transform: rotate(-45deg);
   top: 28px;
@@ -275,7 +266,7 @@ main {
   font-weight: bold;
   font-size: 25px;
   font-weight: bold;
-  margin:0 20px;
+  margin: 0 20px;
   margin-top: 150px;
   width: 80%;
 }
@@ -287,15 +278,12 @@ main {
   line-height: 1.6;
   color: #333;
 }
-#part1,
-#part2 {
-  margin-bottom: 40px;
-}
 #part1 p,
 #part2 p {
+  margin-bottom: 40px;
   font-size: 16px;
   text-align: justify;
-  font-family: cursive;
+  font-family: avenir-lt-w01_35-light1475496, sans-serif;
 }
 #part2 {
   display: flex;
@@ -401,7 +389,7 @@ main {
 }
 #infoCarte {
   width: 60%;
-  height:90%;
+  height: 90%;
   position: absolute;
   margin-top: 300px;
   padding: 20px;
@@ -585,7 +573,7 @@ footer {
   transform: scale(1.2);
 }
 #rating {
-  position: fixed; 
+  position: fixed;
   /* Fixe l'élément à l'écran */
   top: 50%;
   left: 50%;
@@ -595,7 +583,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   width: 50%;
-  background-color: white; 
+  background-color: white;
   /* Ajoute un fond si nécessaire */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -614,7 +602,7 @@ footer {
   transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 .rating label:before {
-  content: '\2605';
+  content: "\2605";
   font-size: 30px;
   transition: color 0.3s;
 }
@@ -658,15 +646,13 @@ footer {
   #SMASH {
     font-size: 40px;
   }
-  #GOURMET::after {
-    content: "____"; /* Tiret long */
-    font-size: 24px;
-    margin: 0px 10px;
-  }
+  #GOURMET::after,
   #GOURMET::before {
-    content: "____"; /* Tiret long */
-    font-size: 24px;
-    margin: 0 10px;
+    display: none;
+  }
+  #selectlaguage {
+    width: 80px;
+    height: 30px;
   }
   #Dburger {
     height: 180px;
@@ -688,28 +674,33 @@ footer {
     display: block;
   }
   #pages {
+    margin-left: 20px;
+    width: 90%;
     top: 180px;
-    left: -100%;
+    left: -140%;
     border-radius: 20px;
     position: fixed;
     gap: 0;
-    background-color: rgba(0, 0, 0, 0.614);
+    background-color: rgba(0, 0, 0, 0.774);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: top 0.3s ease-in-out;
+    padding: 20px;
+    z-index: 1000;
   }
-  #pages a {
-    font-size: 30px;
-    margin: 20px;
-    background-color: #777676;
-    border-radius: 20px;
-    padding: 10px;
+  #pages p {
+    border: #000000 1px solid;
+    font-size: 20px;
+    background-color: rgba(250, 128, 14, 0.863);
+    border-radius: 0 20px 0 20px;
+    padding: 20px;
     color: white;
+    width: 240px;
+    text-align: center;
   }
- #pages.active {
-    left: 0;
-  
+  #pages.active {
+    left: 0px;
   }
   #container {
     width: 100%;
@@ -760,6 +751,12 @@ footer {
     width: 100%;
     margin-top: 50px;
   }
+  #droit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
   #titleText {
     font-family: Linden Hill;
     font-weight: bold;
@@ -801,10 +798,12 @@ footer {
     width: 80%;
     margin-bottom: 20px;
   }
-  #infoCarte{
+  #infoCarte {
+    margin-bottom: 110px;
     height: 50%;
+    width: 80%;
   }
-  iframe{
+  iframe {
     width: 100%;
     height: 50%;
     border-radius: 10px;
@@ -839,6 +838,10 @@ footer {
   form {
     width: 80%;
   }
+  form .input,
+  .text {
+    width: 80%;
+  }
   #footer {
     width: 100%;
     display: flex;
@@ -846,5 +849,3 @@ footer {
     align-items: center;
   }
 }
-
-

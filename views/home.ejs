@@ -147,17 +147,18 @@
           <!-- Carte cachée -->
 <div id="infoCarte" style="display: none;">
   <h2>Adresse</h2>
-  <p>123 Rue Gourmet, Paris, France</p>
+  <p>2 Rue Eugène Dor <br> 17000 La Rochelle</p>
   <h2>Numéro de téléphone</h2>
-  <p>+33 1 23 45 67 89</p>
+  <p>+33 6 24 82 68 06</p>
   <iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9999999999995!2d2.294481315674!3d48.858844979287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d8778e6b0f%3A0x2d8e6b0f0e6b0f0e!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1610000000000!5m2!1sen!2sfr"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.767528537187!2d-1.2070925!3d46.1617291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4801545ed1040001%3A0x7b26ea808d63a244!2s2%20Rue%20Eug%C3%A8ne%20Dor%2C%2017000%20La%20Rochelle%2C%20France!5e0!3m2!1sfr!2sfr!4v1611234567890"
   width="100%"
   height="300"
   style="border:0;"
   allowfullscreen=""
-  loading="lazy"
-></iframe>
+  loading="lazy">
+</iframe>
+
   <h2 class="lesH" style="margin: 20px;">Horaires d'ouverture</h2>
   <p class="lesH" style="margin-top: 10px;">Lundi - Vendredi</p>
   <p class="lesH" style="margin-top: 10px;">11h30 - 14h00</p>
@@ -170,9 +171,9 @@
         <section id="VotreAvis">
         <div id="QUESTION">
           <h1>Donnez-nous votre avis</h1>
-          <form action="">
-            <input class="input" type="text" placeholder="Nom & Prénom " />
-            <input class="input" type="text" placeholder="Email" />
+          <form action="/submit-avis" method="POST">
+            <input class="input" type="text" name="nom" placeholder="Nom & Prénom " />
+            <input class="input" type="text" name="email" placeholder="Email" />
             <div class="rating">
               <input type="radio" id="star5" name="rating" value="5">
               <label for="star5"></label>
@@ -187,13 +188,13 @@
               </div>
             <textarea
               class="text"
-              name="text"
-              id=""
+              name="commentaire"
+              id="commentaire"
               cols="30"
               rows="10"
               placeholder="Votre message"
             ></textarea>
-            <button class="btn">Envoyer</button>
+            <button class="btn" type="submit">Envoyer</button>
           </form>
         </div>
       </section>
